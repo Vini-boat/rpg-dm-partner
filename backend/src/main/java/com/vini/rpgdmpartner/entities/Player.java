@@ -1,4 +1,4 @@
-package com.vini.rpgdmpartner.entity;
+package com.vini.rpgdmpartner.entities;
 
 import jakarta.persistence.*;
 
