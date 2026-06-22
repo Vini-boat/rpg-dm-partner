@@ -10,15 +10,6 @@ Este documento descreve como configurar o ambiente completo do projeto:
 - Spring Boot (backend)
 - Execução local e via Docker
 
-Estrutura do projeto (monorepo):
-
-```
-repo/
-├── backend/
-├── docker-compose.yml
-├── SETUP.md
-```
-
 # 2. JAVA 21 (JDK)
 
 Instalar Eclipse Temurin JDK 21:
@@ -99,19 +90,7 @@ Configurar SDK:
 
 File → Project Structure → Project SDK → Java 21
 
-
-# 6. ESTRUTURA DO PROJETO
-```
-repo/
-├── backend/
-│   ├── src/
-│   ├── pom.xml
-│   ├── Dockerfile
-│   └── .mvn/
-├── docker-compose.yml
-└── SETUP.md
-```
-# 7. COMO RODAR O PROJETO
+# 6. COMO RODAR O PROJETO
 
 Rodar tudo com Docker:
 ```powershell
@@ -124,7 +103,7 @@ cd backend && \
 mvn spring-boot:run -DskipTests
 ```
 
-# 8. VERIFICAÇÃO
+# 7. VERIFICAÇÃO
 
 Backend:
 [http://localhost:8080]http://localhost:8080
@@ -134,7 +113,7 @@ Postgres:
 docker exec -it rpg-postgres psql -U rpguser -d rpgdb
 ```
 
-# 9. PROBLEMAS COMUNS
+# 8. PROBLEMAS COMUNS
 
 Java errado:
 

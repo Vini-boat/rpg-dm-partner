@@ -8,6 +8,8 @@ repo/
 │   ├── pom.xml
 │   ├── Dockerfile
 │   └── .mvn/
+├── nginx/
+│   └── nginx.conf
 ├── docker-compose.yml
 └── SETUP.md
 ```
