@@ -1,19 +1,19 @@
-package com.vini.rpgdmpartner.entities;
+package com.vini.rpgdmpartner.player;
 
 import jakarta.persistence.*;
 
 @Entity
 @Table(name = "players")
-public class Player {
+public class PlayerEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
     private int level;
 
-    public Player() {}
+    public PlayerEntity() {}
 
-    public Player(String name, int level) {
+    public PlayerEntity(String name, int level) {
         this.name = name;
         this.level = level;
     }

@@ -1,4 +1,4 @@
-package com.vini.rpgdmpartner.controllers;
+package com.vini.rpgdmpartner.api;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HealthController {
 
-    @GetMapping("/")
+    @GetMapping("/health")
     public String home(){
         return "UP!";
     }
